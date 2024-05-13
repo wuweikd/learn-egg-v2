@@ -23,6 +23,17 @@ module.exports = appInfo => {
   config.websocket = {
     path: '/ws',
   };
+  config.view = {
+    defaultViewEngine: 'nunjucks',
+    mapping: {
+      '.tpl': 'nunjucks',
+    },
+  };
+
+  config.news = {
+    pageSize: 5,
+    serverUrl: 'https://hacker-news.firebaseio.com/v0',
+  };
 
   return {
     ...config,

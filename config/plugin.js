@@ -12,5 +12,9 @@ module.exports = {
     enable: true,
     package: 'egg-websocket-plugin',
   },
+  nunjucks: {
+    enable: true,
+    package: 'egg-view-nunjucks',
+  },
 };
 

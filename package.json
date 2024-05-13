@@ -10,6 +10,7 @@
     "egg": "^3.17.5",
     "egg-scripts": "2",
     "egg-socket.io": "^4.1.6",
+    "egg-view-nunjucks": "^2.3.0",
     "egg-websocket-plugin": "^3.0.0-beta.0"
   },
   "devDependencies": {
@@ -24,7 +25,7 @@
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-learn-egg-v2",
     "stop": "egg-scripts stop --title=egg-server-learn-egg-v2",
-    "dev": "egg-bin dev",
+    "dev": "egg-bin dev  --sticky",
     "test": "npm run lint -- --fix && npm run test:local",
     "test:local": "egg-bin test",
     "cov": "egg-bin cov",
