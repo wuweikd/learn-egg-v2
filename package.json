@@ -11,7 +11,8 @@
     "egg-scripts": "2",
     "egg-socket.io": "^4.1.6",
     "egg-view-nunjucks": "^2.3.0",
-    "egg-websocket-plugin": "^3.0.0-beta.0"
+    "egg-websocket-plugin": "^3.0.0-beta.0",
+    "moment": "^2.30.1"
   },
   "devDependencies": {
     "egg-bin": "6",

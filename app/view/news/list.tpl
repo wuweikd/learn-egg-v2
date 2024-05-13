@@ -9,6 +9,7 @@
       {% for item in list %}
         <li class="item">
           <a href="{{ item.url }}">{{ item.title }}</a>
+          <div>时间：{{ helper.relativeTime(item.time) }}</div>
         </li>
       {% endfor %}
     </ul>
