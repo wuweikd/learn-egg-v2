@@ -1,4 +1,5 @@
 /** @type Egg.EggPlugin */
+const path = require('node:path');
 module.exports = {
   // had enabled by egg
   // static: {
@@ -15,6 +16,10 @@ module.exports = {
   nunjucks: {
     enable: true,
     package: 'egg-view-nunjucks',
+  },
+  ua: {
+    enable: true,
+    path: path.join(__dirname, '../lib/plugin/egg-ua'),
   },
 };
 

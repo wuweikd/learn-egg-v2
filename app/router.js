@@ -9,4 +9,7 @@ module.exports = app => {
   ws.route('/ws', controller.ws.index);
 
   router.get('/news', controller.news.list);
+
+  router.get('/isIOS', controller.testPlugin.isIOS);
+
 };
