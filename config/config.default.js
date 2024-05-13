@@ -14,7 +14,9 @@ module.exports = appInfo => {
   config.keys = appInfo.name + '_1714287866613_3090';
 
   // add your middleware config here
-  config.middleware = [];
+  config.middleware = [
+    'robot',
+  ];
 
   // add your user config here
   const userConfig = {
@@ -34,6 +36,13 @@ module.exports = appInfo => {
     pageSize: 5,
     serverUrl: 'https://hacker-news.firebaseio.com/v0',
   };
+
+  config.robot = {
+    ua: [
+      /Baiduspider/i,
+    ],
+  };
+
 
   return {
     ...config,
