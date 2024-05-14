@@ -21,5 +21,9 @@ module.exports = {
     enable: true,
     path: path.join(__dirname, '../lib/plugin/egg-ua'),
   },
+  assets: {
+    enable: true,
+    package: 'egg-view-assets',
+  },
 };
 

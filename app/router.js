@@ -4,6 +4,7 @@
 module.exports = app => {
   const { router, controller, ws } = app;
   router.get('/', controller.home.index);
+  router.get('/render', controller.home.render);
   // 配置socket
 
   ws.route('/ws', controller.ws.index);

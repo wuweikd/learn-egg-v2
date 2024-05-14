@@ -1,5 +1,6 @@
 /* eslint valid-jsdoc: "off" */
 
+const { join } = require('node:path');
 /**
  * @param {Egg.EggAppInfo} appInfo app info
  */
@@ -27,7 +28,16 @@ module.exports = appInfo => {
     defaultViewEngine: 'nunjucks',
     mapping: {
       '.tpl': 'nunjucks',
+      '.js': 'assets', // 配置模板引擎
     },
+  };
+  config.assets = {
+    devServer: {
+      command: 'roadhog server',
+      port: 8000,
+    },
+    templatePath: join(appInfo.baseDir, 'app/view/template.html'),
+    templateViewEngine: 'nunjucks',
   };
 
   config.news = {
