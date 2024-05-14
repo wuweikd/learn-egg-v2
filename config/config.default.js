@@ -35,6 +35,16 @@ module.exports = appInfo => {
     serverUrl: 'https://hacker-news.firebaseio.com/v0',
   };
 
+  config.redis = {
+    client: {
+      host: 'redis-16313.c82.us-east-1-2.ec2.redns.redis-cloud.com',
+      port: '16313',
+      password: 'L1jQOGeWfgzkPty8VkDrpGIWj8p3OKYu', // 测试用，直接明文
+      db: 0,
+    },
+    agent: true,
+  };
+
   return {
     ...config,
     ...userConfig,

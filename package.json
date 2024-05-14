@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "egg": "^3.17.5",
+    "egg-redis": "^2.6.0",
     "egg-scripts": "2",
     "egg-socket.io": "^4.1.6",
     "egg-view-nunjucks": "^2.3.0",
@@ -26,7 +27,7 @@
   "scripts": {
     "start": "egg-scripts start --daemon --title=egg-server-learn-egg-v2",
     "stop": "egg-scripts stop --title=egg-server-learn-egg-v2",
-    "dev": "egg-bin dev  --sticky",
+    "dev": "egg-bin dev  --port 7005",
     "test": "npm run lint -- --fix && npm run test:local",
     "test:local": "egg-bin test",
     "cov": "egg-bin cov",

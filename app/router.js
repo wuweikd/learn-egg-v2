@@ -12,4 +12,6 @@ module.exports = app => {
 
   router.get('/isIOS', controller.testPlugin.isIOS);
 
+  router.get('/redis', controller.redis.index);
+
 };

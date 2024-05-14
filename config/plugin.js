@@ -21,5 +21,9 @@ module.exports = {
     enable: true,
     path: path.join(__dirname, '../lib/plugin/egg-ua'),
   },
+  redis: {
+    enable: true,
+    package: 'egg-redis',
+  },
 };
 
